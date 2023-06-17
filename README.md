@@ -38,6 +38,15 @@
   
    [defaults]
    inventory = /home/aman/aws/ec2.py
+   remote_user = ec2-user
+   ask_pass = false
+   private_key_file = /home/aman/aws/ansible.pem
+   [privilage_esculation]
+   become = true
+   become_method = sudo 
+   become_user = root
+   become_ask_pass = false 
+   
    
    ### Now execute the ./ec2.py
    > ./ec2.py
@@ -46,5 +55,12 @@
    
    > ansible all --list-hosts     -  by local server 
    
+  ### Now arrange the aws .pem key on loacl server & change the permission
    
+  > cd /home/aman/aws/ansible.pem
+  
+  > chmod 400 aman.pem
+
+  > chown aman:aman aman.pem
+  
   
