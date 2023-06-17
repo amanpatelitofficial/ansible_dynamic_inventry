@@ -36,7 +36,7 @@
   
   > vim /etc/ansible/ansible.cfg
   
-   [defaults]
+  > [defaults]
    inventory = /home/aman/aws/ec2.py
    remote_user = ec2-user
    ask_pass = false
@@ -45,7 +45,8 @@
    become = true
    become_method = sudo 
    become_user = root
-   become_ask_pass = false 
+   
+   > become_ask_pass = false 
    
    
    ### Now execute the ./ec2.py
