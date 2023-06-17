@@ -43,10 +43,9 @@
   > remote_user = ec2-user
   > 
   > ask_pass = false
-
-
-  > private_key_file = /home/aman/aws/ansible.pem
   > 
+  > private_key_file = /home/aman/aws/ansible.pem
+ 
   > [privilage_esculation]
   >
   > become = true
@@ -54,8 +53,8 @@
   > become_method = sudo 
   > 
   > become_user = root
-   
-   > become_ask_pass = false 
+  > 
+  > become_ask_pass = false 
    
    
    ### Now execute the ./ec2.py
