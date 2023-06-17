@@ -1,6 +1,6 @@
 ## ansible_dynamic_inventry
 
-# To install some packages  
+### To install some packages  
 
  > Install ansible 
 
@@ -8,11 +8,11 @@
  
  > pip install boto3 
  
- # To install aws ansible module 
+ #### To install aws ansible module 
  
  > ansible-galaxy collection install amazon.aws
  
- # Now clone the GitHub repo
+ ### Now clone the GitHub repo
  
  > git clone https://github.com/amanpatelitprofessional/ansible_dynamic_inventry.git
 
@@ -20,6 +20,6 @@
 
  > chmod +x ec2.*
 
- # Now create the IAM user with ec2 full access
+ ### Now create the IAM user with ec2 full access
  
  
