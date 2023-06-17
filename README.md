@@ -35,16 +35,25 @@
   ### Now configure the ansible inventory file
   
   > vim /etc/ansible/ansible.cfg
-  
+  >
   > [defaults]
-   inventory = /home/aman/aws/ec2.py
-   remote_user = ec2-user
-   ask_pass = false
-   private_key_file = /home/aman/aws/ansible.pem
-   [privilage_esculation]
-   become = true
-   become_method = sudo 
-   become_user = root
+  >
+  > inventory = /home/aman/aws/ec2.py
+  >
+  > remote_user = ec2-user
+  > 
+  > ask_pass = false
+
+
+  > private_key_file = /home/aman/aws/ansible.pem
+  > 
+  > [privilage_esculation]
+  >
+  > become = true
+  > 
+  > become_method = sudo 
+  > 
+  > become_user = root
    
    > become_ask_pass = false 
    
